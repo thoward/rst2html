@@ -1,0 +1,42 @@
+{
+  "name": "rst2html",
+  "version": "1.0.0",
+  "description": "Convert reStructured Text to HTML",
+  "author": "Troy Howard",
+  "repository": "git://github.com/thoward/rst2html.git",
+  "homepage": "https://github.com/thoward/rst2html",
+  "bugs": {
+    "url": "http://github.com/thoward/rst2html/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "reST",
+    "reStructuredText",
+    "rst",
+    "markup",
+    "html"
+  ],
+  "tags": [
+    "reST",
+    "reStructuredText",
+    "rst",
+    "markup",
+    "html"
+  ],
+  "main": "lib/rst2html.jsx",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^21.2.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "restructured": "0.0.11"
+  }
+}
