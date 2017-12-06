@@ -1,6 +1,6 @@
 {
   "name": "rst2html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert reStructured Text to HTML",
   "author": "Troy Howard",
   "repository": "git://github.com/thoward/rst2html.git",
