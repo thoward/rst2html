@@ -23,7 +23,7 @@
     "markup",
     "html"
   ],
-  "main": "lib/rst2html.jsx",
+  "main": "dist/rst2html.min.js",
   "scripts": {
     "test": "jest",
     "build": "webpack"
