@@ -31,6 +31,8 @@ const render_any = (element, level = 0, indent = 2) => {
       return render_literal_block(element, level, indent);
     case 'block_quote':
       return render_block_quote(element, level, indent);
+    case 'interpreted_text':
+      return render_interpreted_text(element, level, indent);
     case 'text':
       return render_text(element, level, indent);
     case 'emphasis':
@@ -117,6 +119,11 @@ const render_block_quote = (element, level = 0, indent = 2) => {
 
 const render_text = (element, level = 0, indent = 2) => {
   return render_leaf_element('span', 'rst-text', element, level, indent)
+}
+
+const render_interpreted_text = (element, level = 0, indent = 2) => {
+  const className = 'rst-interpreted_text' + (element.role ? ` rst-role-${element.role}` : '')
+  return render_inline_element('span', className, element, level, indent)
 }
 
 const render_emphasis = (element, level = 0, indent = 2) => {
