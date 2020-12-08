@@ -1,0 +1,28 @@
+{
+    "recurseDepth": 3,
+    "source": {
+        "includePattern": ".+\\.js$",
+        "exclude": [
+            "node_modules",
+            "dist"
+        ]
+    },
+    "tags": {
+        "dictionaries": [
+            "jsdoc"
+        ]
+    },
+    "templates": {
+        "monospaceLinks": true,
+        "default": {
+            "outputSourceFiles": false,
+            "useLongnameInNav": true
+        },
+        "systemName": "RST2HTML",
+        "systemSummary": "A JavaScript library that renders reStructuredText to HTML",
+        "copyright": "Copyright (c) 2017 Troy Howard"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ]
+}

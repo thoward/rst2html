@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './lib/rst2html.jsx',
+  entry: './lib/rst2html.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'rst2html.min.js',
@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jsx?)$/,
+        test: /\.(js?)$/,
         use: 'babel-loader'
       }
     ]
